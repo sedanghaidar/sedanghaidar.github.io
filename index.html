@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Tailwind</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <!-- Body -->
+    <div data-overlay-container="true">
+      <div class="max-w-6xl mx-auto transition-all duration-300 ease-in-out">
+        <div class="flex flex-col gap-4 justify-center md:flex-row">
+          <!-- Bagian Sidebar -->
+          <div class="md:mt-4 mt-0">
+            <aside
+              class="md:sticky fixed top-0 z-40 md:w-60 w-full md:py-5 py-0 h-fit transition-all duration-150 ease-in-out md:flex bg-neutral-50 md:bg-transparent dark:bg-dark md:dark:bg-transparent border-b-2 dark:border-neutral-800 md:border-0 justify-center"
+            >
+              <div class="md:p-4 p-0 overflow-y-auto rounded-xl w-full">
+                <div id="profile-photo" class="relative mt-10">
+                  <img class="w-32 h-32 rounded-full" src="fotoku.jpg" alt="" />
+                  <span
+                    class="top-0 left-7 absolute w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
+                  ></span>
+                </div>
+                <div class="flex flex-col mt-10">
+                  <div class="flex items-center">
+                    <h1 class="text-black text-xl font-bold">Achmad Haidar</h1>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-blue-400 ml-2"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h1 class="text-gray-500 mb-8">@achmdhaidar</h1>
+                  <hr
+                    class="w-48 h-px bg-gray-100 border-0 rounded dark:bg-gray-700"
+                  />
+                </div>
+
+                <div class="">
+                  <nav id="nav-menu" class="mt-2">
+                    <ul class="flex flex-col md:gap-2 w-48">
+                      <li class="group mt-2">
+                        <a
+                          href="javascript:void(0);"
+                          onclick="showSection('Home')"
+                          class="flex md:justify-start justify-center items-center gap-2 p-2 md:p-2 rounded-md text-gray-700 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-200"
+                          aria-current="page"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                            />
+                          </svg>
+                          <span class="flex items-center">Home</span>
+                        </a>
+                      </li>
+
+                      <li class="group">
+                        <a
+                          href="javascript:void(0);"
+                          onclick="showSection('About')"
+                          class="flex md:justify-start justify-center items-center gap-2 p-2 md:p-2 rounded-md text-gray-700 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-200"
+                          aria-current="page"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                            />
+                          </svg>
+                          <span class="flex items-center">About me</span>
+                        </a>
+                      </li>
+
+                      <li class="group">
+                        <a
+                          href="javascript:void(0);"
+                          onclick="showSection('Project')"
+                          class="flex md:justify-start justify-center items-center gap-2 p-2 md:p-2 rounded-md text-gray-700 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-200"
+                          aria-current="page"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                            />
+                          </svg>
+                          <span class="flex items-center">My Projects</span>
+                        </a>
+                      </li>
+
+                      <li class="group">
+                        <a
+                          href="javascript:void(0);"
+                          onclick="showSection('Contact')"
+                          class="flex md:justify-start justify-center items-center gap-2 p-2 md:p-2 rounded-md text-gray-700 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-200"
+                          aria-current="page"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
+                            />
+                          </svg>
+                          <span class="flex items-center">Contact me</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- Bagian Sidebar -->
+
+          <div
+            class="lg:max-w-[854px] transition-all duration-300 w-full md:min-h-screen no-scrollbar"
+          >
+            <div class="mb-10 md:mt-8 mt-20 py-4 px-4">
+              <!-- Bagian Home -->
+              <div id="Home" class="flex flex-col p-4">
+                <div class="flex flex-row justify-between items-center">
+                  <h1 class="md:text-3xl text-2xl font-medium flex gap-1">
+                    Hi, I'm Haidar <span class="animate-shake">👋</span>
+                  </h1>
+                  <a
+                    target="_blank"
+                    aria-label="saweria"
+                    href="https://www.youtube.com/@sedanghaidar"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-3xl"
+                      height="24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 2h2v3H5zm4 0h2v3H9zm4 0h2v3h-2zm6 7h-2V7H3v11c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3h2c1.103 0 2-.897 2-2v-5c0-1.103-.897-2-2-2zm-4 9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9h10v9zm2-2v-5h2l.002 5H17z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <ul
+                  class="flex md:space-x-8 space-x-0 px-5 py-2 md:flex-row flex-col text-neutral-600 dark:text-neutral-400"
+                >
+                  <li class="list-disc text-md">Fullstack Developer</li>
+                  <li class="list-disc text-md">
+                    Based in Yogyakarta-Indonesia
+                  </li>
+                </ul>
+                <p
+                  class="my-2 md:leading-9 leading-7 text-sm md:text-base text-neutral-800 dark:text-neutral-500"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+                <div class="space-y-6">
+                  <div class="space-y-6">
+                    <div
+                      class="flex items-center gap-1 text-xl font-medium text-neutral-800 dark:text-neutral-900"
+                    >
+                      <h2 class="capitalize">Career</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-4 mt-4 mb-4">
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-8 py-4 pr-6 bg-neutral-500 hover:scale-95"
+                  >
+                    <div
+                      class=""
+                      style="opacity: 1; height: 90px; transform: none"
+                    >
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-8 py-4 pr-6 bg-neutral-500 hover:scale-95"
+                  >
+                    <div
+                      class=""
+                      style="opacity: 1; height: 90px; transform: none"
+                    >
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+                </div>
+
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+
+                <section class="space-y-2">
+                  <div class="space-y-2">
+                    <div
+                      class="flex items-center gap-1 text-xl font-medium text-neutral-800 dark:text-neutral-900"
+                    >
+                      <h2 class="capitalize">Tools That I Have Used</h2>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="grid grid-cols-6 gap-4 p-4">
+                  <!-- Kotak 1 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">JavaScript</h3>
+                  </div>
+                  <!-- Kotak 2 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Python</h3>
+                  </div>
+                  <!-- Kotak 3 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Java</h3>
+                  </div>
+                  <!-- Kotak 4 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">C#</h3>
+                  </div>
+                  <!-- Kotak 5 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Ruby</h3>
+                  </div>
+                  <!-- Kotak 6 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">PHP</h3>
+                  </div>
+
+                  <!-- Kotak 7 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Swift</h3>
+                  </div>
+                  <!-- Kotak 8 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Kotlin</h3>
+                  </div>
+                  <!-- Kotak 9 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Go</h3>
+                  </div>
+                  <!-- Kotak 10 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">C++</h3>
+                  </div>
+                  <!-- Kotak 11 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Rust</h3>
+                  </div>
+                  <!-- Kotak 12 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">TypeScript</h3>
+                  </div>
+
+                  <!-- Kotak 13 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Scala</h3>
+                  </div>
+                  <!-- Kotak 14 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Perl</h3>
+                  </div>
+                  <!-- Kotak 15 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Haskell</h3>
+                  </div>
+                  <!-- Kotak 16 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Elixir</h3>
+                  </div>
+                  <!-- Kotak 17 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Clojure</h3>
+                  </div>
+                  <!-- Kotak 18 -->
+                  <div
+                    class="rounded-lg bg-neutral-500 p-2 transition-transform duration-300 hover:scale-95 h-10 flex items-center justify-center"
+                  >
+                    <h3 class="text-white">Lua</h3>
+                  </div>
+                </div>
+
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+
+                <div class="space-y-6">
+                  <div
+                    class="flex items-center gap-1 text-xl font-medium text-neutral-800 dark:text-neutral-900"
+                  >
+                    <h2 class="capitalize">
+                      Let's Make Something Extraordinary With Me!
+                    </h2>
+                  </div>
+                  <div
+                    class="flex flex-col lg:flex-row justify-between lg:items-center gap-2 text-neutral-600 dark:text-neutral-500"
+                  >
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bagian Home -->
+
+              <!-- Bagian About -->
+              <div id="About" class="flex flex-col p-4" style="display: none">
+                <div class="flex flex-row justify-between items-center">
+                  <h1
+                    class="md:text-3xl text-2xl font-medium flex gap-1 text-neutral-600 dark:text-neutral-900"
+                  >
+                    Little Story of Me
+                  </h1>
+                </div>
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+                <p
+                  class="font-medium text-neutral-700 dark:text-neutral-700 mb-4"
+                >
+                  I'm Achmad Haidar
+                </p>
+                <div class="">
+                  <p class="text-neutral-600 dark:text-neutral-500 mb-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="text-neutral-600 dark:text-neutral-500 mb-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p class="text-neutral-600 dark:text-neutral-500 mb-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+                <div class="space-y-6">
+                  <div class="space-y-6">
+                    <div
+                      class="flex items-center gap-1 text-xl font-medium text-neutral-800 dark:text-neutral-900"
+                    >
+                      <h2 class="capitalize">My Education</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-4 mt-4 mb-4">
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-8 py-4 pr-6 bg-neutral-500 hover:scale-95"
+                  >
+                    <div
+                      class=""
+                      style="opacity: 1; height: 90px; transform: none"
+                    >
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-8 py-4 pr-6 bg-neutral-500 hover:scale-95"
+                  >
+                    <div
+                      class=""
+                      style="opacity: 1; height: 90px; transform: none"
+                    >
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Bagian About -->
+
+              <!-- Bagian Project -->
+              <div id="Project" class="flex flex-col p-4" style="display: none">
+                <div class="flex flex-row justify-between items-center">
+                  <h1
+                    class="md:text-3xl text-2xl font-medium flex gap-1 text-neutral-600 dark:text-neutral-900"
+                  >
+                    Library of My Projects
+                  </h1>
+                </div>
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+                <p
+                  class="font-medium text-neutral-700 dark:text-neutral-700 mb-4"
+                >
+                  welcome to my library
+                </p>
+                <div class="">
+                  <p class="text-neutral-600 dark:text-neutral-500 mb-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s
+                  </p>
+                </div>
+
+                <!-- Grid untuk project cards -->
+                <div class="grid lg:grid-cols-2 gap-6 p-4 mt-4 mb-4">
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 250px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 250px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 250px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 250px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Bagian Project -->
+
+              <!-- Bagian Contact -->
+              <div id="Contact" class="flex flex-col p-4" style="display: none">
+                <div class="flex flex-row justify-between items-center">
+                  <h1
+                    class="md:text-3xl text-2xl font-medium flex gap-1 text-neutral-600 dark:text-neutral-900"
+                  >
+                    Contact Me
+                  </h1>
+                </div>
+                <p
+                  class="font-medium text-neutral-700 dark:text-neutral-700 mt-4 mb-4"
+                >
+                  Feel free to get in touch and let's have a discussion about
+                  how we can work together.
+                </p>
+                <hr
+                  class="shrink-0 bg-gray-100 border-0 rounded dark:bg-gray-700 w-full h-px my-6"
+                  role="separator"
+                  data-orientation="horizontal"
+                />
+                <div class="">
+                  <p class="text-neutral-600 dark:text-neutral-500 mb-2">
+                    Find me on
+                  </p>
+                </div>
+
+                <!-- Grid untuk project cards -->
+                <div class="grid lg:grid-cols-2 gap-6 p-4 mt-4 mb-4">
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 200px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 200px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 200px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+
+                  <a
+                    class="overflow-hidden rounded-xl transition-all duration-300 shadow-sm flex items-center gap-4 p-4 bg-neutral-500 hover:scale-95"
+                    style="width: 100%; height: 200px"
+                  >
+                    <div style="opacity: 1; height: 90px; transform: none">
+                      <div
+                        class="justify-center items-center flex p-3 relative z-[1] group"
+                        style="opacity: 1; transform: none"
+                      ></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Bagian Contact -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Body -->
+
+    <!-- Javascript -->
+    <script>
+      // Fungsi untuk mengganti tampilan antara Home, About, Project, dan Contact
+      function showSection(sectionId) {
+        // Sembunyikan semua section
+        const sections = ["Home", "About", "Project", "Contact"];
+        sections.forEach((section) => {
+          document.getElementById(section).style.display = "none";
+        });
+
+        // Tampilkan section yang dipilih
+        document.getElementById(sectionId).style.display = "block";
+
+        // Menghapus kelas 'bg-gray-200' dari semua menu
+        const menuItems = document.querySelectorAll("#nav-menu a");
+        menuItems.forEach((item) => {
+          item.classList.remove("bg-gray-200", "text-gray-800"); // Menghapus kelas aktif
+          item.classList.add("text-gray-700"); // Menambahkan kelas teks default
+        });
+
+        // Menambahkan kelas 'bg-gray-200' dan mengubah warna teks ke hitam untuk menu yang aktif
+        const activeItem = document.querySelector(
+          `#nav-menu a[onclick="showSection('${sectionId}')"]`
+        );
+        if (activeItem) {
+          activeItem.classList.add("bg-gray-200", "text-gray-800"); // Mengubah kelas aktif
+        }
+      }
+
+      // Saat halaman pertama kali dimuat, tampilkan Home
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("Home").style.display = "block";
+        // Panggil showSection untuk menandai menu Home sebagai aktif
+        showSection("Home");
+      });
+    </script>
+    <!-- Javascript -->
+  </body>
+</html>
